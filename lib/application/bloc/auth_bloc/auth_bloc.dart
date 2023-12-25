@@ -24,7 +24,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         emit(AuthSuccess(_user));
       } else {
         emit(UserNotSignedIn());
-      } 
+      }
     } catch (e) {
       emit(AuthFailure(e.toString()));
       // emit(WeatherFailure(e.toString()));
@@ -38,8 +38,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       User? _user = authRepo.getCurrentUser();
       emit(AuthSuccess(_user!));
     } catch (e) {
-      
+     
       emit(AuthFailure(e.toString()));
+       emit(SignInFailed());
     }
   }
 
@@ -50,7 +51,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       User? user = authRepo.getCurrentUser();
       emit(AuthSuccess(user!));
     } catch (e) {
-     
+      emit(SignUpFailed());
       emit(AuthFailure(e.toString()));
     }
   }
@@ -61,7 +62,6 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       await authRepo.logOut();
       emit(LogoutState());
     } catch (e) {
-      
       emit(AuthFailure(e.toString()));
     }
   }

@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(25, 35, 35, 1),
+      backgroundColor: Color.fromRGBO(35, 35, 35, 1),
       body: BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
           // TODO: implement listener
@@ -36,7 +36,6 @@ class _SplashScreenState extends State<SplashScreen> {
               const Duration(seconds: 3),
               () {
                 AutoRouter.of(context).replace(const SignUpRoute());
-                //  AutoRouter.of(context).replace(SignUpRoute());
               },
             );
           }
@@ -45,15 +44,12 @@ class _SplashScreenState extends State<SplashScreen> {
               const Duration(seconds: 3),
               () {
                 AutoRouter.of(context).replace(const WeatherRoute());
-                //  AutoRouter.of(context).replace(SignUpRoute());
               },
             );
           }
         },
         child: Center(
-          child:
-              //CircularProgressIndicator(),
-              //Image.asset("assets/splash_screen_gif.gif"),
+          child: 
               Lottie.asset("assets/loading_json.json"),
         ),
       ),

@@ -20,5 +20,7 @@ class AuthFailure extends AuthState {
 }
 
 class UserNotSignedIn extends AuthState {}
+class SignInFailed extends AuthState {}
+class SignUpFailed extends AuthState {}
 
 class LogoutState extends AuthState {}

@@ -32,6 +32,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
         if (state is AuthFailure) {
           ScaffoldMessenger.of(context)
               .showSnackBar(SnackBar(content: Text(state.error)));
+        }
+        if (state is SignUpFailed) {
           AutoRouter.of(context).push(ErrorRoute());
         }
       }, builder: (context, state) {
@@ -101,11 +103,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             ),
           ),
         );
-      }
-          // return Center(
-          //   child: Text("Something went wrong ! ${state}"),
-          // );
-          ),
+      }),
     );
   }
 }

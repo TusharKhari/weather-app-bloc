@@ -27,14 +27,15 @@ class _LoginScreenState extends State<LoginScreen> {
         child: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is AuthSuccess) {
-              AutoRouter.of(context).replace(WeatherRoute());
+              AutoRouter.of(context).replace(const WeatherRoute());
             }
             if (state is AuthFailure) {
               ScaffoldMessenger.of(context)
                   .showSnackBar(SnackBar(content: Text(state.error)));
             }
-            AutoRouter.of(context).push(ErrorRoute());
-            // TODO: implement listener
+            if (state is SignInFailed) {
+              AutoRouter.of(context).push(const ErrorRoute());
+            }
           },
           builder: (context, state) {
             return Center(
@@ -63,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   state is AuthLoading
                       ?
                       // CupertinoActivityIndicator
-                      CupertinoActivityIndicator()
+                      const CupertinoActivityIndicator()
                       : GradientButton(
                           text: "Sign in",
                           onPressed: () {
@@ -76,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ));
                           },
                         ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   InkWell(
@@ -86,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       //     MaterialPageRoute(
                       //       builder: (context) => SignUpScreen(),
                       //     ));
-                      AutoRouter.of(context).replace(SignUpRoute());
+                      AutoRouter.of(context).replace(const SignUpRoute());
                       // AutoRouter.of(context).push(SignUpRoute());
                     },
                     child: const Text.rich(
