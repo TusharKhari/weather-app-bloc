@@ -13,7 +13,7 @@ routing : auto_route
 location : geolocator
 animation : lottie
 
-- [Get APK]([https://docs.flutter.dev/get-started/codelab](https://drive.google.com/drive/folders/14Ih1T6fPrqXpd8DJijomwOo3GIe7q3R7?usp=sharing))
+- [Get APK](https://drive.google.com/drive/folders/14Ih1T6fPrqXpd8DJijomwOo3GIe7q3R7?usp=sharing)
 
 
 ## Getting Started
