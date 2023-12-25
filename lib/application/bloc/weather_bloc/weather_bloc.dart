@@ -4,6 +4,7 @@ import 'package:de_nada/infrastructure/local_storage/local_db.dart';
 import 'package:de_nada/infrastructure/repositories/location_repo.dart';
 import 'package:de_nada/infrastructure/repositories/weather_repo.dart';
 import 'package:de_nada/injection_container.dart';
+import 'package:geolocator/geolocator.dart';
 
 part 'weather_event.dart';
 part 'weather_state.dart';
@@ -51,7 +52,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
       final weather = await weatherRepo.getCurrentWeather(cityName: event.city);
       emit(WeatherSuccess(weather));
       await localDb.addWeather(weather);
-    } catch (e) { 
+    } catch (e) {
       WeatherModel? localWeather = await localDb.getWeather();
 
       if (localWeather != null) {
@@ -68,7 +69,8 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
     emit(WeatherLoading());
     try {
       final weather = await weatherRepo.getCurrentLocationWeather(
-          position: await locationService.checkPermission());
+        position: await locationService.checkPermission(),
+      );
       emit(WeatherSuccess(weather));
       await localDb.addWeather(weather);
     } catch (e) {

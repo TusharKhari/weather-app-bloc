@@ -1,9 +1,9 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:permission_handler/permission_handler.dart';
-
+ 
 class LocationRepo {
-
   //  check permission of location and getting the permission
+
+ 
 
   Future<Position?> checkPermission() async {
     Position? position;
@@ -12,7 +12,8 @@ class LocationRepo {
     if (serviceEnabled) {
       position = await _getCurrentLocation();
     } else {
-      openAppSettings();
+      //openAppSettings();
+      Geolocator.openLocationSettings();
     }
     return position;
   }

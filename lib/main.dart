@@ -11,7 +11,7 @@ import 'domain/entity/weather_model.dart';
 import 'firebase_options.dart';
 import 'presentation/constants.dart';
 
-// for generating routes ->   dart run build_runner build --delete-conflicting-outputs
+// for generating routes and hive adaptor ->   dart run build_runner build --delete-conflicting-outputs
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
