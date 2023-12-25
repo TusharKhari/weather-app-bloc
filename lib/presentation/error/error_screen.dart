@@ -37,6 +37,16 @@ class ErrorScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 const Text(
+                  "check your email or password",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                ),
+                const SizedBox(height: 20),
+                const Text(
+                  "OR",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                ),
+                const SizedBox(height: 20),
+                const Text(
                   "search a valid city.",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
