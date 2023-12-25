@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "357702448905",
+    "firebase_url": "https://denada-78891-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "denada-78891",
+    "storage_bucket": "denada-78891.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357702448905:android:e7645246675d82c2ea05d8",
+        "android_client_info": {
+          "package_name": "com.example.de_nada"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI47dKNNSBV_qxR9n1d5CbYWXZkeHt-ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
