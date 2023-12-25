@@ -2,6 +2,20 @@
 
 A new Flutter project.
 
+Weather(openweather API) application with firebase authentication.
+
+Architecture : DDD
+State Management : bLoC
+Networking : Dio
+dependency injection : get_it
+local DB : hive
+routing : auto_route
+location : geolocator
+animation : lottie
+
+- [Get APK]([https://docs.flutter.dev/get-started/codelab](https://drive.google.com/drive/folders/14Ih1T6fPrqXpd8DJijomwOo3GIe7q3R7?usp=sharing))
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
