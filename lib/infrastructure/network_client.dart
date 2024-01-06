@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:de_nada/injection_container.dart';
 import 'package:dio/dio.dart';
 
@@ -9,6 +11,14 @@ class NetworkClient {
   Future<Response?> createGetRequest({required url}) async {
     try {
       Response res = await _dio.get(url);
+     
+      _dio.interceptors.add(LogInterceptor(
+        request: true, 
+        responseBody: true, 
+        logPrint: (object) {
+          log("$url ->  $object");
+        },
+      ));
       if (res.statusCode == 200) {
         return res;
       } else {

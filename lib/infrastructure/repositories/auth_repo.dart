@@ -20,7 +20,8 @@ class AuthRepo {
   Future<void> signIn({required String email, required String password}) async {
     try {
       await auth.signInWithEmailAndPassword(email: email, password: password);
-    } catch (e) {
+      
+     } catch (e) {
       
       throw e;
     }

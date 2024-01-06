@@ -12,6 +12,7 @@ import 'firebase_options.dart';
 import 'presentation/constants.dart';
 
 // for generating routes ->   dart run build_runner build --delete-conflicting-outputs
+//  https://home.openweathermap.org/users/sign_in  tusharkhari  fogovo8835@watrf.com
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
