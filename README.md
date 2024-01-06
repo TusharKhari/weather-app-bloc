@@ -12,8 +12,9 @@ local DB : hive
 routing : auto_route
 location : geolocator
 animation : lottie
+logging : pretty dio logger
 
-- [Get APK](https://drive.google.com/drive/folders/14Ih1T6fPrqXpd8DJijomwOo3GIe7q3R7?usp=sharing)
+- [Get APK](https://drive.google.com/drive/folders/1DuW9fZaS6Puh_gqWnyXzatEPFv0EiHcv?usp=drive_link)
 
 
 ## Getting Started
