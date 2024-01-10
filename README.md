@@ -22,7 +22,9 @@ Weather(openweather API) application with firebase authentication.
 
 
 This project is a starting point for a Flutter application.
-![Simulator Screenshot - iPhone 14 Pro - 2024-01-10 at 18 06 33](https://github.com/TusharKhari/weather-app-bloc/assets/88612651/99395499-f362-46f0-90f5-3932c8a9a2ff | width=100)  
+![Simulator Screenshot - iPhone 14 Pro - 2024-01-10 at 18 06 33](https://github.com/TusharKhari/weather-app-bloc/assets/88612651/99395499-f362-46f0-90f5-3932c8a9a2ff )  
+
+<img src="https://github.com/TusharKhari/weather-app-bloc/assets/88612651/99395499-f362-46f0-90f5-3932c8a9a2ff" width="200" height="400" />
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
