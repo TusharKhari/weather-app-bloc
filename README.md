@@ -4,7 +4,7 @@ A new Flutter project.
 
 Weather(openweather API) application with firebase authentication.
 
--Architecture : DDD.
+- Architecture : DDD.
 -State Management : bLoC
 -Networking : Dio
 -dependency injection : get_it
