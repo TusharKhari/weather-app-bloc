@@ -23,8 +23,8 @@ Weather(openweather API) application with firebase authentication.
 
   
 
-- <img src="https://github.com/TusharKhari/weather-app-bloc/assets/88612651/99395499-f362-46f0-90f5-3932c8a9a2ff" width="300" height="450" />
- <img src="https://github.com/TusharKhari/weather-app-bloc/assets/88612651/7ad8f448-e37a-4aef-9eea-3411a9eb9548" width="300" height="450" />
+<img src="https://github.com/TusharKhari/weather-app-bloc/assets/88612651/99395499-f362-46f0-90f5-3932c8a9a2ff" width="300" height="450" />
+<img src="https://github.com/TusharKhari/weather-app-bloc/assets/88612651/7ad8f448-e37a-4aef-9eea-3411a9eb9548" width="300" height="450" />
 
 A few resources to get you started if this is your first Flutter project:
 
