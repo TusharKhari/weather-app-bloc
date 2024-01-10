@@ -4,15 +4,15 @@ A new Flutter project.
 
 Weather(openweather API) application with firebase authentication.
 
-Architecture : DDD
-State Management : bLoC
-Networking : Dio
-dependency injection : get_it
-local DB : hive
-routing : auto_route
-location : geolocator
-animation : lottie
-logging : pretty dio logger
+-Architecture : DDD
+-State Management : bLoC
+-Networking : Dio
+-dependency injection : get_it
+-local DB : hive
+-routing : auto_route
+-location : geolocator
+-animation : lottie
+-logging : pretty dio logger
 
 - [Get APK](https://drive.google.com/drive/folders/1DuW9fZaS6Puh_gqWnyXzatEPFv0EiHcv?usp=drive_link)
 
