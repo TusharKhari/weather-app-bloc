@@ -3,8 +3,7 @@
 A new Flutter project. 
 
 
-Weather(openweather API) application with firebase authentication.
-![Simulator Screenshot - iPhone 14 Pro - 2024-01-10 at 18 05 03]()
+Weather(openweather API) application with firebase authentication. 
 
 - Architecture : DDD.
 - State Management : bLoC
