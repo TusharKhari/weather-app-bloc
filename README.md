@@ -13,6 +13,7 @@ Weather(openweather API) application with firebase authentication.
 - location : geolocator
 - animation : lottie
 - logging : pretty dio logger
+- auth : firebase auth
 
 - [Get APK](https://drive.google.com/drive/folders/1DuW9fZaS6Puh_gqWnyXzatEPFv0EiHcv?usp=drive_link)
 
